@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/icons/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>sign-up form</title>
+  </head>
+  <body>
+    <div class="content">
+      <div class="headeing-texts">
+        <p class="learnToCode">
+          Learn to code by <br />
+          watching others
+        </p>
+        <p class="description">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <div class="blueButton-and-whiteDiv">
+        <button class="blue-button">
+          <span class="span-text"> Try it free 7 days </span> then $20/mo.
+          thereafter
+        </button>
+        <div class="registration-div">
+          <form id="fill-in">
+            <div class="input-and-error">
+              <input
+                type="text"
+                class="input-value firstName-input"
+                placeholder="First Name"
+              />
+              <img
+                class="error-icon firstName-error-icon"
+                src="./assets/icons/icon-error.svg"
+              />
+            </div>
+            <p class="error-message firstName-error">
+              First Name cannot be empty
+            </p>
+            <div class="input-and-error">
+              <input
+                type="text"
+                class="input-value lastName-input secondInput"
+                placeholder="Last Name"
+              />
+              <img
+                class="error-icon lastName-error-icon errorIcon2"
+                src="./assets/icons/icon-error.svg"
+              />
+            </div>
+            <p class="error-message lastName-error">
+              Last Name cannot be empty
+            </p>
+            <div class="input-and-error">
+              <input
+                type="text"
+                class="input-value email-input secondInput"
+                placeholder="Email Adress"
+              />
+              <img
+                class="error-icon email-error-icon errorIcon2"
+                src="./assets/icons/icon-error.svg"
+              />
+            </div>
+            <p class="error-message email-error">
+              Looks like this is not an email
+            </p>
+            <div class="input-and-error">
+              <input
+                type="text"
+                class="input-value password-input secondInput"
+                placeholder="Password"
+              />
+              <img
+                class="error-icon password-error-icon errorIcon2"
+                src="./assets/icons/icon-error.svg"
+              />
+            </div>
+            <p class="error-message password-error">
+              Password can not be empty
+            </p>
+          </form>
+          <button class="green-button">CLAIM YOUR FREE TRIAL</button>
+          <p class="greenButton-description">
+            By clicking the button, you are agreeing to our
+            <span class="terms-and-conditions"> Terms and Services</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
