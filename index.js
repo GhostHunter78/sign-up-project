@@ -79,9 +79,53 @@ firstNameInput.addEventListener("input", () => {
     if (firstNameInput.value.length > 0) {
       firstNameIcon.style.display = "none";
       firstNameError.style.display = "none";
+      firstNameInput.style.borderColor = "#3d3b48";
     } else {
       firstNameIcon.style.display = "block";
       firstNameError.style.display = "block";
+      firstNameInput.style.borderColor = "red";
+    }
+  }
+});
+
+lastNameInput.addEventListener("input", () => {
+  if (clicked) {
+    if (lastNameInput.value.length > 0) {
+      lastNameIcon.style.display = "none";
+      lastNameError.style.display = "none";
+      lastNameInput.style.borderColor = "#3d3b48";
+    } else {
+      lastNameIcon.style.display = "block";
+      lastNameError.style.display = "block";
+      lastNameInput.style.borderColor = "red";
+    }
+  }
+});
+
+emailInput.addEventListener("input", () => {
+  if (clicked) {
+    if (emailInput.value.length > 0) {
+      emailIcon.style.display = "none";
+      emailError.style.display = "none";
+      emailInput.style.borderColor = "#3d3b48";
+    } else {
+      emailIcon.style.display = "block";
+      emailError.style.display = "block";
+      emailInput.style.borderColor = "red";
+    }
+  }
+});
+
+passwordInput.addEventListener("input", () => {
+  if (clicked) {
+    if (passwordInput.value.length > 0) {
+      passwordIcon.style.display = "none";
+      passwordError.style.display = "none";
+      passwordInput.style.borderColor = "#3d3b48";
+    } else {
+      passwordIcon.style.display = "block";
+      passwordError.style.display = "block";
+      passwordInput.style.borderColor = "red";
     }
   }
 });

@@ -116,14 +116,6 @@ body {
   display: none;
 }
 
-.firstName-error-icon.visible {
-  display: block;
-}
-
-.firstName-error.visible {
-  display: block;
-}
-
 .secondInput {
   margin-top: 16px;
 }
