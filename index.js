@@ -19,7 +19,11 @@ const lastNameInput = document.querySelector(".lastName-input");
 const emailInput = document.querySelector(".email-input");
 const passwordInput = document.querySelector(".password-input");
 
+let clicked = false;
+
 greenButton.addEventListener("click", () => {
+  clicked = true;
+
   const emailValue = emailInput.value;
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const valid = emailRegex.test(emailValue);
@@ -70,11 +74,14 @@ greenButton.addEventListener("click", () => {
   }
 });
 
-// firstNameInput.addEventListener("input", () => {
-//   if (firstNameIcon.classList.contains("visible")) {
-//     if (firstNameInput.value.length > 0) {
-//       firstNameIcon.classList.remove("visible");
-//       firstNameError.classList.remove("visible");
-//     }
-//   }
-// });
+firstNameInput.addEventListener("input", () => {
+  if (clicked) {
+    if (firstNameInput.value.length > 0) {
+      firstNameIcon.style.display = "none";
+      firstNameError.style.display = "none";
+    } else {
+      firstNameIcon.style.display = "block";
+      firstNameError.style.display = "block";
+    }
+  }
+});
